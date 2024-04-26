@@ -1,0 +1,91 @@
+body * {
+    user-select: none;
+}
+.color {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.backgrounds {
+    display: flex;
+}
+.line {
+    width: 765px;
+    height: 8px;
+    background: linear-gradient(to right,hsl(0,100%,50%),hsl(60,100%,50%),hsl(120,100%,50%),hsl(180,100%,50%),hsl(240,100%,50%),hsl(300,100%,50%),hsl(360,100%,50%));
+    border-radius: 20px;
+    margin: 20px 0;
+    position: relative;
+    cursor: pointer;
+    user-select: none; 
+}
+.line .piker {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -4px;
+    border: none;
+    background: red;
+    left: 0;
+    user-select: none; 
+}
+.base {
+    width: 510px;
+    height: 255px;
+    position: relative;
+    cursor: pointer;
+    user-select: none; 
+}
+.main-color {
+    width: 255px;
+    height: 255px;
+}
+.white {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #ffffff 0%,  #ffffff00 100%);
+}
+.black {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(#00000000 0%,  #000000 100%);
+    z-index: 1;
+}
+.piker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid white;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    user-select: none; 
+}
+.red label {
+    color: red;
+}
+.green label {
+    color: green;
+}
+.blue label {
+    color: blue;
+}
+.opacity {
+    display: flex;
+    align-items: center;
+}
+.opacity input {
+    transform: rotate(-90deg);
+    height: 100%;
+}
+.opacity label {
+    position: relative;
+    right: 50px;
+}

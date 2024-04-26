@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="color">
+        <div class="backgrounds">
+            <div class="main-color" style="background-color: rgb(255,0,0);"></div>  
+            <div class="base" style="background-color: rgb(255,0,0);">
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="piker"></div>
+            </div>
+            <div class="opacity">
+                <input type="range" value="1" min="0" max="1"  step="0.01" name="opacity" id="opacityInput">
+                <label for="opacityInput">Opacity</label>
+            </div>
+        </div>
+        <div class="line">
+            <div class="piker"></div>
+        </div>
+    </div>
+    <div class="color-control">
+        <label for="R">R</label><input type="text" class="text" name="R" id="R" value="255">
+        <label for="G">G</label><input type="text" class="text" name="G" id="G" value="0">
+        <label for="B">B</label><input type="text" class="text" name="B" id="B" value="0">
+        <label for="opacity">opacity</label><input type="text" class="text" name="opacity" id="opacity">
+    </div>
+    <br>
+    <br><br><br>
+    <div class="control">
+        контроль
+        <label for="R2">R</label><input type="text" class="text" name="R2" id="R2" value="255">
+        <label for="G2">G</label><input type="text" class="text" name="G2" id="G2" value="0">
+        <label for="B2">B</label><input type="text" class="text" name="B2" id="B2" value="0">
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
